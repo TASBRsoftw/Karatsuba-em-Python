@@ -68,12 +68,12 @@ def karatsuba(x, y):
 ### Execução Direta
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/trabalho_individual_1_FPAA.git
+   git clone https://github.com/seu-usuario/Karatsuba-em-Python.git
    ```
 
 2. Navegue até o diretório do projeto:
    ```bash
-   cd trabalho_individual_1_FPAA
+   cd Karatsuba-em-Python
    ```
 
 3. Execute o programa:
@@ -119,41 +119,6 @@ A função `karatsuba` possui o seguinte fluxo de controle:
 3. Divisão dos números em partes alta e baixa
 4. Três chamadas recursivas
 5. Combinação dos resultados
-
-#### Grafo de Fluxo
-```
-    [Início]
-       |
-       v
-[Verifica caso base] -> True -> [Retorna x*y] -> [Fim]
-       |
-       v
-     False
-       |
-       v
-[Calcula tamanho n]
-       |
-       v
-[Calcula ponto médio m]
-       |
-       v
-[Divide x em high1/low1]
-       |
-       v
-[Divide y em high2/low2]
-       |
-       v
-[Chama karatsuba(low1, low2)] -> [z0]
-       |
-       v
-[Chama karatsuba(somas)] -> [z1]
-       |
-       v
-[Chama karatsuba(high1, high2)] -> [z2]
-       |
-       v
-[Combina resultados] -> [Retorna resultado] -> [Fim]
-```
 
 #### Cálculo da Complexidade Ciclomática
 Usando a fórmula M = E - N + 2P:
