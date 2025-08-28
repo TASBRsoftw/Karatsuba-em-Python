@@ -132,7 +132,7 @@ Usando a fórmula M = E - N + 2P:
 
 M = 9 - 9 + 2*1 = 2
 
-A complexidade ciclomática é 2, indicando que o código tem uma complexidade simples com 2 caminhos independentes possíveis.
+A complexidade ciclomática é 2, indicando que o código tem uma complexidade simples com 2 caminhos independentes possíveis: multiplicação tradicional para números pequenos ou aplicação do algoritmo de karatsuba para números grandes.
 
 #### Grafo de Fluxo
 !{Karatsuba.png}
