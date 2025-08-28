@@ -135,7 +135,7 @@ M = 9 - 9 + 2*1 = 2
 A complexidade ciclomática é 2, indicando que o código tem uma complexidade simples com 2 caminhos independentes possíveis: multiplicação tradicional para números pequenos ou aplicação do algoritmo de karatsuba para números grandes.
 
 #### Grafo de Fluxo
-!{Karatsuba.png}
+https://github.com/TASBRsoftw/Karatsuba-em-Python/blob/main/Karatsuba.png
 
 ### Análise da Complexidade Assintótica
 O algoritmo de Karatsuba tem complexidade temporal de O(n^log₂3) ≈ O(n^1.585), que é uma melhoria significativa em relação ao algoritmo tradicional de multiplicação que é O(n²).
