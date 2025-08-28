@@ -114,68 +114,36 @@ def karatsuba(x, y):
 
 #### Fluxo de Controle da Função
 A função `karatsuba` possui o seguinte fluxo de controle:
-1. Verificação do caso base (if)
-2. Cálculo do tamanho dos números
-3. Divisão dos números em partes alta e baixa
-4. Três chamadas recursivas
-5. Combinação dos resultados
-
-#### Grafo de Fluxo
-```
-    [Início]
-       |
-       v
-[Verifica caso base] -> True -> [Retorna x*y] -> [Fim]
-       |
-       v
-     False
-       |
-       v
-[Calcula tamanho n]
-       |
-       v
-[Calcula ponto médio m]
-       |
-       v
-[Divide x em high1/low1]
-       |
-       v
-[Divide y em high2/low2]
-       |
-       v
-[Chama karatsuba(low1, low2)] -> [z0]
-       |
-       v
-[Chama karatsuba(somas)] -> [z1]
-       |
-       v
-[Chama karatsuba(high1, high2)] -> [z2]
-       |
-       v
-[Combina resultados] -> [Retorna resultado] -> [Fim]
-```
+1. Início do código
+2. Verificação do caso base (if)
+3. se verdadeiro, Retorna x*y 
+4. se falso, N = max(len(str(x)), len(str(y)))
+5. M = n/2
+6. Divide x em high e low
+7. Divide x em high e low
+8. Três chamadas recursivas
+9. Combinação dos resultados
 
 #### Cálculo da Complexidade Ciclomática
 Usando a fórmula M = E - N + 2P:
-- Número de arestas (E): 15
-- Número de nós (N): 12
+- Número de arestas (E): 9
+- Número de nós (N): 9
 - Número de componentes conexos (P): 1
 
-M = 15 - 12 + 2*1 = 5
+M = 9 - 9 + 2*1 = 2
 
-A complexidade ciclomática é 5, indicando que o código tem uma complexidade moderada com 5 caminhos independentes possíveis.
+A complexidade ciclomática é 2, indicando que o código tem uma complexidade simples com 2 caminhos independentes possíveis.
+
+#### Grafo de Fluxo
+!{Karatsuba.png}
 
 ### Análise da Complexidade Assintótica
-
-#### Complexidade Temporal
 O algoritmo de Karatsuba tem complexidade temporal de O(n^log₂3) ≈ O(n^1.585), que é uma melhoria significativa em relação ao algoritmo tradicional de multiplicação que é O(n²).
 
 - **Melhor caso**: O(1) - quando os números são pequenos o suficiente para usar multiplicação direta
 - **Caso médio**: O(n^log₂3) - a complexidade esperada do algoritmo
 - **Pior caso**: O(n^log₂3) - mesmo no pior caso, mantém a mesma complexidade
 
-#### Complexidade Espacial
-A complexidade espacial é O(log n) devido à pilha de recursão, onde a profundidade máxima da recursão é proporcional ao logaritmo do tamanho dos números.
 
 ## Exemplo de Saída
 
